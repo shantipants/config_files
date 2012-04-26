@@ -17,10 +17,8 @@ set undodir=/home/user/dchellaram/.vim/undodir
 set undofile
 set mouse=a "need to make this only apply to xterm windows...
 "The following lines only apply to 256-color terminals
-:set t_AB=[48;5;%dm
-:set t_AF=[38;5;%dm
-
-autocmd BufWinEnter * silent !echo -ne "\ek`basename %`\e\\"
+"#:set t_AB=[48;5;%dm
+":set t_AF=[38;5;%dm
 
 set viewoptions=folds,cursor
 au BufWinLeave * mkview
